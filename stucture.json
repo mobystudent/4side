@@ -1,0 +1,34 @@
+{
+	"public": {
+		"js": {
+			"0": "app.js",
+			"1": "index.js"
+		},
+		"styl": {
+			"blocks": "",
+			"vendor": {
+				"bootstrap": {
+					"0" : "bootstrap.styl",
+					"1" : "variables.styl"
+				},
+				"bem": ["https://github.com/Vladimirtishenko/shared", "bem"]
+			},
+			"0": "build.styl",
+			"common": {
+				"0": "defaults.styl",
+				"__modificators": ""
+			}
+		},
+		"build": "",
+		"img": {
+			"0": "test_pattern.svg"
+		},
+		"fonts": "",
+		"pug": {
+			"0" : "index.pug",
+			"layout" : "layout.pug",
+			"include": ""
+		}
+	},
+	"$": "webpack.config.js, .gitignore, .babelrc, .eslintrc"
+}

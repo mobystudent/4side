@@ -1,0 +1,47 @@
+extends layout/layout
+
+block content
+	.content
+		.content__container.content__container--main.fl.fl--flow-col-wrap.fl--justify-b
+			header.header.fl.fl--justify-b
+				a.logo
+					img.logo__img(src="public/img/logo.png")
+				ul.nav.fl.fl--align-c
+					li.nav__item
+						a.nav__link(href="#") about us	
+					li.nav__item
+						a.nav__link(href="#") contacts
+					li.nav__item
+						a.nav__link.nav__link--img(href="#")
+							img.nav__img(src="public/img/letter.svg")
+			.circle-slider
+				.circle-slider__border
+				ul.circle-slider__list.fl
+					.circle-slider__li.circle-slider__li--prev
+						span.circle-slider__span diamond house
+					.circle-slider__li.circle-slider__li--active
+						span.circle-slider__span ascania flora
+					.circle-slider__li.circle-slider__li--next
+						span.circle-slider__span sweet home group
+			.spot
+			ul.slider.fl.fl--justify-b
+				.slider__li
+					span.slider__slide diamond house
+				.slider__li
+					span.slider__slide ascania flora
+				.slider__li
+					span.slider__slide sweet home group
+			footer.footer.fl.fl--justify-b.fl--align-end
+				ul.social.fl.fl--flow-col-wrap.fl--align-c
+					li.social__li
+						a.social__icon.social__icon--fb(href="#")
+							img(src="public/img/facebook.svg")
+					li.social__li
+						a.social__icon.social__icon--vk(href="#")
+							img(src="public/img/vk.svg")
+					li.social__li
+						a.social__icon.social__icon--tw(href="#")
+							img(src="public/img/twitter.svg")
+				.magic
+					button.magic__btn
+						img(src="public/img/magician-hat.svg")
