@@ -1,5 +1,8 @@
 extends layout/layout
 
+block title
+	title Main
+
 block content
 	.content
 		.content__container.content__container--main.fl.fl--flow-col-wrap.fl--justify-b
@@ -8,7 +11,7 @@ block content
 					img.logo__img(src="public/img/logo.png")
 				ul.nav.fl.fl--align-c
 					li.nav__item
-						a.nav__link(href="#") about us	
+						a.nav__link(href="about us.html") about us	
 					li.nav__item
 						a.nav__link(href="#") contacts
 					li.nav__item
@@ -24,12 +27,12 @@ block content
 					.circle-slider__li.circle-slider__li--next
 						span.circle-slider__span sweet home group
 			.spot
-			ul.slider.fl.fl--justify-b
-				.slider__li
+			ul.slider.slider--main.fl.fl--justify-b
+				li.slider__li
 					span.slider__slide diamond house
-				.slider__li
+				li.slider__li
 					span.slider__slide ascania flora
-				.slider__li
+				li.slider__li
 					span.slider__slide sweet home group
 			footer.footer.fl.fl--justify-b.fl--align-end
 				ul.social.fl.fl--flow-col-wrap.fl--align-c

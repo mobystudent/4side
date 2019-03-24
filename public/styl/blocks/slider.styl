@@ -1,13 +1,114 @@
 .slider
-   display none
-   
-   @media screen and (min-width 769px)
-      position absolute
-      top 50%
-      left 0
-      width 200%
-      transform translateX(-22%)
+    &--main
+        display none
 
-      &__slide
-         cursor pointer
-         font 100px HelveticaNeueCyrHeavy, sans-serif
+        @media screen and (min-width 769px)
+            position absolute
+            top 50%
+            left 0
+            width 200%
+            transform translateX(-22%)
+
+    &__slide
+        cursor pointer
+        font 100px HelveticaNeueCyrHeavy, sans-serif
+
+    &__li
+        padding 150px 30px 30px 300px
+        min-height 925px
+
+        &--1
+            padding-right 145px
+            background url(../img/slide-img1.png) 1095px 150px no-repeat, #f8bf11
+
+        &--2
+            background url(../img/slide-img2.png) 1015px 270px no-repeat, #8161f0
+
+        &--3
+            background url(../img/slide-img3.png) 950px 35px no-repeat, #14aae5
+
+        &--4
+            background url(../img/slide-img4.png) 970px 130px no-repeat, #f76270
+
+    &__title
+        margin-bottom 15px
+        width 730px
+        display inline-block
+
+    &__span
+        line-height 42px
+        display inline
+        font-size 30px
+        letter-spacing .025em
+        text-transform uppercase
+
+        &--bold
+            margin-right 10px
+
+    &__text
+        width 620px
+        font-size 18px
+        letter-spacing .05em
+        line-height 30px
+        margin-bottom 40px
+
+    &__control
+        width 294px
+
+    &__prev, &__next
+        width 19px
+        height 36px
+        background url(../img/arrow.png) no-repeat
+
+    &__next
+        transform rotate(-180deg)
+
+    &__quantity-box
+        font-size 24px
+        letter-spacing .2em
+
+    &__quantity
+        &--actual
+            position relative
+            margin-right 15px
+
+            &:after
+                content '/'
+                position absolute
+                top 0
+                left 20px
+
+    &__wrap
+        position relative
+        z-index 0
+
+        &:before
+            content ''
+            position absolute
+            top -135px
+            left -165px
+            z-index -1
+
+        &--1
+            &:before
+                background url(../img/number-1.png) no-repeat
+                width 140px
+                height 280px
+
+        &--2
+            &:before
+                background url(../img/number-2.png) no-repeat
+                width 205px
+                height 280px
+
+        &--3
+            &:before
+                background url(../img/number-3.png) no-repeat
+                width 220px
+                height 275px
+
+        &--4
+            &:before
+                background url(../img/number-4.png) no-repeat
+                width 255px
+                height 275px
