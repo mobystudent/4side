@@ -14,33 +14,80 @@
         font 100px HelveticaNeueCyrHeavy, sans-serif
 
     &__li
-        padding 150px 30px 30px 300px
-        min-height 925px
+        @media screen and (min-width 992px)
+            padding 150px 30px 30px 215px
+            min-height 670px
+
+        @media screen and (min-width 1367px)
+            padding 150px 30px 30px 300px
+            min-height 925px
 
         &--1
-            padding-right 145px
-            background url(../img/slide-img1.png) 1095px 150px no-repeat, #f8bf11
+            background url(../img/slide-img1.png) no-repeat, #f8bf11
+
+            @media screen and (min-width 992px)
+                background-position 885px 180px
+                background-size 352px 418px
+
+            @media screen and (min-width 1367px)
+                background-position 1095px 150px
+                background-size 631px 749px
 
         &--2
-            background url(../img/slide-img2.png) 1015px 270px no-repeat, #8161f0
+            background url(../img/slide-img2.png) no-repeat, #8161f0
+
+            @media screen and (min-width 992px)
+                background-position 885px 325px
+                background-size 446px 282px
+
+            @media screen and (min-width 1367px)
+                background-position 1015px 270px
+                background-size 797px 504px
 
         &--3
-            background url(../img/slide-img3.png) 950px 35px no-repeat, #14aae5
+            background url(../img/slide-img3.png) no-repeat, #14aae5
+
+            @media screen and (min-width 992px)
+                background-position 770px 45px
+                background-size 516px 516px
+
+            @media screen and (min-width 1367px)
+                background-position 950px 35px
+                background-size 921px 921px
 
         &--4
-            background url(../img/slide-img4.png) 970px 130px no-repeat, #f76270
+            background url(../img/slide-img4.png) no-repeat, #f76270
+
+            @media screen and (min-width 992px)
+                background-position 785px 155px
+                background-size 468px 451px
+
+            @media screen and (min-width 1367px)
+                background-position 970px 130px
+                background-size 836px 806px
 
     &__title
         margin-bottom 15px
-        width 730px
         display inline-block
 
+        @media screen and (min-width 992px)
+            width 620px
+
+        @media screen and (min-width 1367px)
+            width 730px
+
     &__span
-        line-height 42px
         display inline
-        font-size 30px
         letter-spacing .025em
         text-transform uppercase
+
+        @media screen and (min-width 992px)
+            font-size 24px
+            line-height 38px
+
+        @media screen and (min-width 1367px)
+            font-size 30px
+            line-height 42px
 
         &--bold
             margin-right 10px
@@ -49,8 +96,13 @@
         width 620px
         font-size 18px
         letter-spacing .05em
-        line-height 30px
         margin-bottom 40px
+
+        @media screen and (min-width 992px)
+            line-height 26px
+
+        @media screen and (min-width 1367px)
+            line-height 30px
 
     &__control
         width 294px
@@ -82,33 +134,73 @@
         position relative
         z-index 0
 
+        @media screen and (min-width 992px)
+            margin-top 30px
+
+        @media screen and (min-width 1367px)
+            margin 0
+
         &:before
             content ''
             position absolute
-            top -135px
-            left -165px
             z-index -1
+
+            @media screen and (min-width 992px)
+                top -75px
+                left -145px
+
+            @media screen and (min-width 1367px)
+                top -135px
+                left -165px
 
         &--1
             &:before
                 background url(../img/number-1.png) no-repeat
-                width 140px
-                height 280px
+                background-size cover
+
+                @media screen and (min-width 992px)
+                    width 115px
+                    height 235px
+
+                @media screen and (min-width 1367px)
+                    width 140px
+                    height 280px
 
         &--2
             &:before
                 background url(../img/number-2.png) no-repeat
-                width 205px
-                height 280px
+                background-size cover
+
+                @media screen and (min-width 992px)
+                    width 170px
+                    height 235px
+
+                @media screen and (min-width 1367px)
+                    width 205px
+                    height 280px
 
         &--3
             &:before
                 background url(../img/number-3.png) no-repeat
-                width 220px
-                height 275px
+                background-size cover
+
+                @media screen and (min-width 992px)
+                    width 180px
+                    height 230px
+
+                @media screen and (min-width 1367px)
+                    width 220px
+                    height 275px
 
         &--4
             &:before
                 background url(../img/number-4.png) no-repeat
-                width 255px
-                height 275px
+                background-size cover
+
+                @media screen and (min-width 992px)
+                    width 210px
+                    height 230px
+
+                @media screen and (min-width 1367px)
+                    width 255px
+                    height 275px
