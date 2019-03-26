@@ -1,0 +1,46 @@
+extends layout/layout
+
+block title
+    title About us
+   
+block content
+    .content
+        .content__container.content__container--contacts.fl.fl--flow-col-wrap.fl--justify-b
+            header.header.fl.fl--justify-b
+                a.logo(href="index.html")
+                    img.logo__img(src="public/img/logo.png")
+                ul.nav.fl.fl--align-c
+                    li.nav__item
+                        a.nav__link.font--roman(href="portfolio.html") portfolio	
+                    li.nav__item
+                        a.nav__link.font--roman(href="about us.html") about us
+                    li.nav__item
+                        a.nav__link.nav__link--img(href="message.html")
+                            img.nav__img(src="public/img/letter.svg")      
+            h1.page-title.page-title--contacts.font--heavy Hello!
+            .info.fl.fl--justify-b
+               aside.info__box--contact
+                   h2.info__title.font--bold Contact
+                   a.info__item.font--bold(href="tel:380634418382") + 38 (063) 441 83 82
+                   a.info__item.font--bold(href="tel:972547737463") + 972 (54) 773 74 63
+                   a.info__item.font--bold(href="message.html") support@4side.in.ua
+               aside.info__box--address
+                   h2.info__title.font--bold Address
+                   a.info__item.font--bold Украина, Киев, ул.Городецкого 10
+                   a.info__item.font--bold Израиль, Kadima-Zoran st. M'g 15
+            .map
+            .order-call.font--bold.fl.fl--align-c Заказать проект
+            footer.footer.footer--contacts.fl.fl--justify-b.fl--align-end
+                ul.social.fl.fl--flow-col-wrap.fl--align-c
+                    li.social__li
+                        a.social__icon.social__icon--fb(href="#")
+                            img(src="public/img/facebook.svg")
+                    li.social__li
+                        a.social__icon.social__icon--vk(href="#")
+                            img(src="public/img/vk.svg")
+                    li.social__li
+                        a.social__icon.social__icon--tw(href="#")
+                            img(src="public/img/twitter.svg")
+                .magic
+                    button.magic__btn
+                        img(src="public/img/magician-hat.svg")
