@@ -4,11 +4,18 @@
     letter-spacing .01em
     text-align center
     text-transform uppercase
-    line-height 44px
     position absolute
     left 50%
     transform translateX(-50%)
     z-index 20
+
+    @media screen and (min-width 767px)
+        width 155px
+        height 155px
+        font-size 22px
+        box-shadow 0 0 0 35px rgba(186,172,217,.5)
+        line-height 32px
+        top 555px
 
     @media screen and (min-width 992px)
         width 215px
@@ -16,6 +23,7 @@
         box-shadow 0 0 0 55px rgba(186,172,217,.5)
         font-size 30px
         top 355px
+        line-height 44px
 
     @media screen and (min-width 1367px)
         width 255px
