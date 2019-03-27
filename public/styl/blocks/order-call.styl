@@ -1,15 +1,25 @@
 .order-call
-    width 255px
-    height 255px
     background #baacd9
     border-radius 50%
-    box-shadow 0 0 0 65px rgba(186,172,217,.5)
-    font-size 32px
     letter-spacing .01em
     text-align center
     text-transform uppercase
     line-height 44px
     position absolute
-    top 485px
     left 50%
     transform translateX(-50%)
+    z-index 20
+
+    @media screen and (min-width 992px)
+        width 215px
+        height 215px
+        box-shadow 0 0 0 55px rgba(186,172,217,.5)
+        font-size 30px
+        top 355px
+
+    @media screen and (min-width 1367px)
+        width 255px
+        height 255px
+        box-shadow 0 0 0 65px rgba(186,172,217,.5)
+        font-size 32px
+        top 485px
