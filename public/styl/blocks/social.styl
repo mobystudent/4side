@@ -1,17 +1,21 @@
 .social
-   margin-bottom -35px
+    flex-flow row wrap
+    
+    @media screen and (min-width 767px)
+        margin-bottom -35px
+        flex-flow column wrap
 
-   &__icon
-      margin-bottom 35px
-      
-      &--fb
-         width 15px
-         height 30px
+    &__icon
+        margin-bottom 35px
 
-      &--vk
-         width 35px
-         height 20px
+        &--fb
+            width 15px
+            height 30px
 
-      &--tw
-         width 30px
-         height 25px
+        &--vk
+            width 35px
+            height 20px
+
+        &--tw
+            width 30px
+            height 25px
