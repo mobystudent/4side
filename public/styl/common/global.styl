@@ -2,7 +2,7 @@ body
 	color #fff
 	font 16px HelveticaNeueCyrRoman, sans-serif
 	// overflow-x hidden
-	// width 1920px
+	width 1920px
 	// width 1367px
 	// height 1275px
 	// background #000
@@ -33,3 +33,31 @@ img
 
 .cursor
 	cursor pointer
+
+placeholder(color, font-size)
+	&::placeholder
+		color color
+		opacity 1
+		font font-size HelveticaNeueCyrLight, sans-serif
+		letter-spacing .075em
+
+	&::-ms-placeholder
+		color color
+		opacity 1
+		font font-size HelveticaNeueCyrLight, sans-serif
+		letter-spacing .075em
+
+	&:-ms-input-placeholder
+		color color
+		opacity 1
+		font font-size HelveticaNeueCyrLight, sans-serif
+		letter-spacing .075em
+
+	&:focus:placeholder
+		opacity 0
+
+	&:focus::-ms-placeholder
+		opacity 0
+
+	&:focus:-ms-input-placeholder
+		opacity 0

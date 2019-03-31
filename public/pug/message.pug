@@ -1,0 +1,111 @@
+extends layout/layout
+
+block title
+    title About us
+   
+block content
+    .content.content--message
+        .content__container.content__container--message.fl.fl--flow-col-wrap.fl--justify-b
+            header.header.fl.fl--justify-b
+                a.logo(href="index.html")
+                    img.logo__img(src="public/img/logo.png")
+                img.header__close.cursor(src="public/img/close.png")
+            //- .message
+            //-    h2.message__title Расскажите нам о вашем проекте
+            //-    button.message__btn.font--bold Бриф на разработку сайта
+            form.slider__form
+               ul.slider.slider--message
+                  //- li.slider__li.slider__li--message
+                  //-    h2.slider__subtitle.font--bold Информация о компании
+                  //-    .slider__box
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Название компании" required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Основные продукты и оказываемые услуги" required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Адрес текущего сайта" required)
+                  //- li.slider__li.slider__li--message
+                  //-    h2.slider__subtitle.font--bold Способы связи
+                  //-    .slider__box
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Контактное лицо" required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="tel" placeholder="Телефон" required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="email" placeholder="E-mail" required)
+                  //- li.slider__li.slider__li--message
+                  //-    h2.slider__subtitle.slider__subtitle--padding-top.font--bold Положение на рынке
+                  //-    .slider__box
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Сфера деятельности" required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Целевая аудитория" required)
+                  //- li.slider__li.slider__li--message
+                  //-    h2.slider__subtitle.slider__subtitle--margin-small.font--bold Дизайн
+                  //-    .slider__text.slider__text--message.font--light
+                  //-       p.slider__p Если у компании уже есть логотип и фирменный стиль – пожалуйста, приложите их.
+                  //-       p.slider__p Кроме того, вы можете указать, какие из элементов фирменного стиля необходимо разработать.
+                  //-    .slider__box
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Элементы дизайна, которые нужно использовать" required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Целевая аудитория" required)
+                  //-    .doc.fl
+                  //-       img.doc__img.cursor(src="public/img/download.png")
+                  //-       .doc__files.fl
+                  //-          .doc__file.fl.fl--align-c
+                  //-             img.doc__close.cursor(src="public/img/close.png")
+                  //-             span.doc__name Документ 123
+                  //-          .doc__file.fl.fl--align-c
+                  //-             img.doc__close.cursor(src="public/img/close.png")
+                  //-             span.doc__name Документ 123
+                  //- li.slider__li.slider__li--message
+                  //-    h2.slider__subtitle.slider__subtitle--margin-small.font--bold Примеры
+                  //-    .slider__text.slider__text--message.font--light
+                  //-       p.slider__p Лучше всего указать примеры сайтов компаний, работающих в вашей сфере, при отсутствии таковых – любые другие. Пожалуйста, не забудьте указать основные причины, по которым те или иные примеры попали в этот список.
+                  //-    .slider__box
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Адреса сайтов, которые нравятся и что именно, перечислите" required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Адреса сайтов, которые не нравятся и что конкретно" required)
+                  //- li.slider__li.slider__li--message
+                  //-    h2.slider__subtitle.slider__subtitle--margin-b.slider__subtitle--padding-top.font--bold Идеи
+                  //-    .slider__box
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Есть ли у вас идеи, кото-рые вы хотите воплотить в дизайне?" required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Что вы категорически не хотите видеть в дизайне сайта?" required)
+                  //- li.slider__li.slider__li--message
+                  //-    h2.slider__subtitle.slider__subtitle--margin-small.font--bold Функционал
+                  //-    .slider__text.slider__text--message.font--light
+                  //-       p.slider__p Перечислите требования к функционалу, если они необходимы, например: импорт/экспорт, интеграция с 1С, фильтр параметров, личный кабинет и его прямое предназначение, и все индивидуальные требования (так как это непосредственно влияет на окончательный бюджет проекта)
+                  //-    textarea.textarea.font--light
+                  //- li.slider__li.slider__li--message
+                  //-    .slider__text.slider__text--message.slider__text--padding-top.font--light
+                  //-       p.slider__p Укажите предполагаемые основные разделы вашего будущего сайта, подробно опишите главную страницу и прокомментируйте содержание разделов (с указанием типов содержания, или особенностей каждой страницы):
+                  //-    textarea.textarea.font--light
+                  //- li.slider__li.slider__li--message
+                  //-    h2.slider__subtitle.slider__subtitle--padding-top.font--bold Дальнейшее развитие
+                  //-    .slider__box
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Кто будет осуществлять поддержку и обновление сайта?" required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Планируется ли продвижение сайта в поисковых системах?" required)
+                  //- li.slider__li.slider__li--message
+                  //-    h2.slider__subtitle.font--bold Бюджет и сроки
+                  //-    .slider__box
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Укажите диапазон предполагаемого бюджета на разработку сайта." required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Укажите желаемый и обязательный сроки сдачи проекта." required)
+                  //-       .slider__field
+                  //-          input.input.font--light(type="text" placeholder="Укажите диапазон предполагаемого ежемесячного бюджета на продвижение и рекламу сайта." required)
+                  li.slider__li.slider__li--message
+                     h2.slider__subtitle.font--bold Ваши комментарии, вопросы, пожелания
+                     textarea.textarea.textarea--big.font--light
+                     .send.cursor.fl--flow-col-wrap.fl--align-c
+                        img.send__img(src="public/img/send.png")
+                        span.send__span.font--light Отправить
+            .call-us.fl.fl--align-c.cursor
+               p.call-us__p.font--bold Я не хочу ничего писать просто позвоните мне
+               button.call-us__phone
