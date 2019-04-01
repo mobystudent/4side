@@ -1,14 +1,26 @@
 .send
     display inline-flex
     position absolute
-    top 105px
-    right -170px
+
+    @media screen and (min-width 992px)
+        top 90px
+        right -130px
+
+    @media screen and (min-width 1367px)
+        top 105px
+        right -170px
 
     &__img
         height 50px
         width 60px
         margin-bottom 15px
 
-    &__span
-        font-size 18px
+    &__btn
         letter-spacing .075em
+        color #fff
+
+        @media screen and (min-width 992px)
+            font-size 16px
+
+        @media screen and (min-width 1367px)
+            font-size 18px

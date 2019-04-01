@@ -1,14 +1,19 @@
 .call-us
     position absolute
-    bottom 60px
     left 50%
     transform translateX(-50%)
+
+    @media screen and (min-width 992px)
+        bottom 35px
+
+    @media screen and (min-width 1367px)
+        bottom 60px
 
     &__p
         font-size 18px
         letter-spacing .025em
         width 290px
-        line-height 26px
+        line-height 30px
         text-align center
         text-transform uppercase
         position relative

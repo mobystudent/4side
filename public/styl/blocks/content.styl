@@ -9,7 +9,11 @@
         min-height 975px
 
     &--message
-        border 135px solid #fff
+        @media screen and (min-width 992px)
+            border 80px solid #fff
+
+        @media screen and (min-width 1367px)
+            border 135px solid #fff
 
     &__container
         height 100%
